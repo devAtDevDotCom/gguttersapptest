@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --blue: #23386F;
+    --red: #B32241;
+    --black: #000;
+    --white-text: #fff;
+    --x-small-font: .75rem;
+    --small-font: 1rem;
+    --medium-font: 1.25rem;
+    --large-font: 1.5rem;
+    --h1-font: 3vw;
+    --h2-font: 3.5vw;
+    --h4-font:  2.75vw;
+  }
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .wrapper-red-bkg {
+    background-color: #B32241;
+  }
+
+  /* Header */
+
+.container {
+    /*width: 100vw;*/
+    max-width: 1450px;
+    position:relative;
+    margin: 0 auto;
+    transition: opacity .5s;
+}
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lion-logo {
+    width: 20vw;
+    margin-left: 20px;
+  }
+
+  .home-page-signup-login-out-menu-container {
+    display: flex;
+    margin-right: 15vw;
+    position: relative;
+    font-size: x-small;
+  }
+
+  .home-page-signup-login-out-menu-container li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+
+  .signup-login-out-menu-container {
+    display: flex;
+    margin-right: 15vw;
+    position: relative;
+    top: 23px;
+    font-size: x-small;
+  }
+
+  .signup-login-out-menu-container li,  .home-page-signup-login-out-menu-container li {
+    margin: 0 10px 0 0;
+    list-style: none;
+  }
+
+  .signup-login-out-menu-container li a {
+    text-decoration: none;
+    font-size: var(--medium-font);
+    color: var(--black);
+  }
+
+  #open-nav-btn {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .sidenav {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0;
+    background-color: var(--blue);
+    opacity: .9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: var(--large);
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    opacity: .6;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #header-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden !important;
+  }
+
+
+  /* Container Two */
+
+
+  .container-two {
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: var(--red);
+}
+
+.container-two div {
+    padding-top: 20px;
+    background-color: var(--red);
+}
+
+.trust-container {
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+    font-size: var(--h2-font);
+}
+
+.eti-text {
+    color: var(--white);
+    padding-top: 10px;
+    font-size: var(--h4-font);
+    font-style: italic;
+    text-align: center;
+}
+
+.eti-text :nth-child(2) {
+    padding: 10px 20px;
+}
+
+
+
+/*  Contact Online Request Buttons & Reviews Icons */
+
+.buttons-reviews-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.buttons-container {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container a  {
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--white-text);
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+.buttons-container :first-child {
+    background-color: var(--blue);
+}
+
+/*  yelp facebook Angie Container */
+
+.reviews-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.reviews-icons-container a img {
+    width: 20vw;
+}
+
+/* Google  Yelp Reviews Container */
+
+.google-reviews-container {
+    text-align: center;
+    height: 400px;
+}
+
+.content {
+    background-color: var(--white);
+    position: relative;
+    height: 440px;
+}
+
+.content .images {
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.content .images .imgs div {
+    padding: 0 10px;
+}
+  
+  .images img {
+    height: 100%;
+    width:100%;
+    
+  }
+  
+  .images .imgs {
+    padding: 0 40px;
+   /* background-color: white;
+    position: relative;
+    text-align: center;*/
+  }
+
+  .process-imgs {
+    text-align: center;
+    padding: 0 30px;
+  }
+  
+  .fa-solid {
+    font-size: 25px;
+    color: black;
+  }
+  .imgs div {
+    /* position: relative;
+    top: 50%;
+    transform: translateY(-50%); */
+  }
+
+.btn-sliders {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .btn-sliders span {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  
+  .nav-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .btn-sliders span:hover {
+    background-color: white;
+  }
+  
+  .slide {
+    background-color: var(--title);
+  }
+  
+  .content .slide {
+   /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; */
+  }
+  
+  .slide span {
+    font-size: 25px;
+   /* color: white; */
+  }
+
+  .slide span:hover {
+    cursor: pointer;
+  }
+
+  .content .left {
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+  }
+  
+  .content .right {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+  }
+
+  
+  .reviews-text {
+    /*color: var(--secondary);*/
+    padding: 10px 0px;
+
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+
+  /* Services Container */
+
+  .services-container {
+    background-color: var(--blue);
+    padding: 40px;
+  }
+
+  .services-container ul {
+    color: var(--white);
+  }
+
+  .cleaning-services {
+    margin-bottom: 30px;
+  }
+
+  .cleaning-services h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .cleaning-services h2, h4 {
+    margin-bottom: 10px;
+  }
+
+  .small-button {
+    padding: 5px 7px;
+    display: inline-block;
+    color: var(--white);
+    margin-top: 10px;
+    font-size: x-small;
+  }
+
+  /* Get Qpute Page */
+  .quote-container {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: -5px;
+    background-color: var(--red);
+  }
+
+  .quote-container h4 {
+    padding: 20px;
+    color: var(--white-text)
+  }
+
+
+  /* Process Slider */
+
+  .process-container {
+    position: relative;
+    width: 80vw;
+    background-color: var(--white);
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-process-arrow {
+    left: -20px !important;
+  }
+
+  .right-process-arrow {
+    right: -20px !important;
+  }
+
+  .process-arrow span {
+    color: black !important;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--blue);
+  }
+
+  .footer-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-container ul li {
+    list-style: none;
+    padding: 5px 0px;
+    color: var(--white);
+    font-size: x-small;
+  }
+
+.footer-container ul li a {
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .footer-h5-divider-container h5 {
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+  }
+
+  .footer-container p {
+    color: white;
+    font-size: x-small;
+    padding-top: 5px;
+  }
+
+
+  /* Mobile Media Queries */
+
+  @media screen and (max-width: 600px) {
+
+    #header-img-container {
+      margin-top: 30px;
+  }
+
+    .lion-logo {
+        width: 40vw;
+        height: auto;
+    }
+
+    .signup-login-out-menu-container li a {
+        font-size: var(--x-small-font);
+    }
+
+    #open-nav-btn {
+        top: 2.5vh;
+    }
+
+    #service-request-container {
+      height: auto;
+    }
+
+    .trust-container span {
+        font-size: var(--small-font);
+    }
+
+    .trust-container h3 {
+        font-size: var(--medium-font);
+    }
+
+    .eti-text {
+        font-size: var(--x-small-font) ;
+    }
+
+    .buttons-container {
+        width: 100%;
+    }
+
+    .buttons-container a {
+        font-size: 12px;
+    }
+
+    .reviews-icons-container a img {
+      width: 25vw;
+    }
+
+    .pages-two-footer a img {
+        width: 35vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;};
+    .sidenav a {font-size: 18px;};
+  }

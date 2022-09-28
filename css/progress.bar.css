@@ -1,0 +1,28 @@
+.request-service-container, .progress-bar-container {
+    padding: 20px;
+}
+
+
+.progress-bar-outer {
+    height: 43px;
+    width: 80vw;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+
+.progress-bar {
+    background-color: green;
+    color: white;
+    height: 35px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 8px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    transition: width .5s;
+}
